@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- ------------------------------- -->
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------------------ -->
+
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="w-9/12 mx-auto">
+        <nav class="flex gap-2 justify-between items-center py-14 font-raleway">
+            <h1 class="text-4xl font-extrabold">P-Ticket</h1>
+            <div class="hidden lg:flex gap-10 font-medium text-lg">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Destination</a>
+                <a href="">Search</a>
+            </div>
+            <div>
+                <button class="py-4 px-7 text-xl text-[#1DD100] font-bold bg-[#1dd10066] rounded-xl">Bus <img
+                        class="inline pl-2" src="images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
