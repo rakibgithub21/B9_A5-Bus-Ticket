@@ -57,8 +57,9 @@
                     within the app. The integrated testing features allow for a
                     streamlined .
                 </p>
-                <button class="bg-[#1DD100] font-raleway text-[#030712] py-5 px-8 rounded-xl text-xl font-bold">Buy
-                    Tickets</button>
+                <a href="#click"
+                    class="bg-[#1DD100] font-raleway text-[#030712] py-5 px-8 rounded-xl text-xl font-bold">Buy
+                    Tickets</a>
             </div>
         </div>
     </header>
@@ -175,13 +176,13 @@
 
 
             <!-- container -->
-            <div class="grid grid-cols-7 container mx-auto my-12 bg-[#FFF]">
+            <div id="click" class="grid grid-cols-7 container mx-auto my-12 bg-[#FFF]">
                 <!-- seat  -->
-                <div class="col-span-4 space-y-5 p-8">
+                <div  class="col-span-4 space-y-5 p-8">
 
 
                     <h1 class="font-semibold text-2xl font-raleway">Select Your Seat</h1>
-                    <div class="flex justify-between font-inter">
+                    <div class="flex justify-between font-inter ">
                         <div class="flex gap-3">
                             <img src="images/seat-gray.png" alt="">
                             <p class="text-lg font-medium text-[#03071280]">Available</p>
@@ -197,8 +198,8 @@
                     </div>
 
                     <!-- seat container div -->
-                    <div class="space-y-6">
-                        
+                    <div  class="space-y-6">
+
                         <!-- A -->
                         <div class="flex justify-between text-[#03071280] font-semibold text-lg ">
                             <div class="flex items-center gap-5">
@@ -327,7 +328,62 @@
 
 
                 <!-- email field -->
-                <div class="col-span-3  ">
+                <div class="col-span-3  p-8 space-y-5">
+                    <h1 class="font-semibold text-2xl font-raleway">Select Your Seat</h1>
+                    <div>
+                        <!-- table -->
+
+                        <table class="table my-5">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th class="text-[#030712] font-medium text-lg">Seat <span class="px-2 text-white rounded-3xl bg-[#1DD100]">2</span></th>
+                                    <th class="text-[#030712] font-medium text-lg">Class</th>
+                                    <th class="text-[#030712] font-medium text-lg">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+
+
+                        <hr>
+                        <!-- total price -->
+                        <div class="flex justify-between my-4">
+                            <h1 class="text-lg font-medium">Total Price</h1>
+                            <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+                        </div>
+                        <!-- btn and input field -->
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Have any copupon?" />
+                            <button class="bg-[#1DD100] p-2 rounded-xl text-white font-semibold">Secondary</button>
+                        </label>
+
+                        <div class="flex justify-between my-4">
+                            <h1 class="text-lg font-medium">Grand Total</h1>
+                            <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+                        </div>
+
+                    </div>
+                    <!--  -->
+                    <div class="space-y-3">
+                        <p class="text-[#030712] font-semibold text-lg">Passenger Name*</p>
+                        <input type="text" placeholder="Enter your name" class="w-full input input-bordered " />
+                        <p class="text-[#030712] font-semibold text-lg">Phone Number*</p>
+                        <input type="number" placeholder="Enter your phone number"
+                            class="w-full input input-bordered " />
+                        <p class="text-[#030712] font-semibold text-lg">Email ID</p>
+                        <input type="email" placeholder="Enter your email id" class="w-full input input-bordered " />
+                        <button
+                            class="btn font-raleway rounded-2xl text-white w-full font-bold text-[20px] bg-[#1DD100]">Next</button>
+                        <div class="flex justify-center gap-10 font-inter">
+                            <a class="underline text-[#03071299]" href="">Terms and Conditions</a>
+                            <a class="underline text-[#03071299]" href="">Cancellation Policy</a>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
