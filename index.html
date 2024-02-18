@@ -367,7 +367,7 @@
                         </div>
 
                     </div>
-                    <!--  -->
+                    <!-- modal -->
                     <div class="space-y-3">
                         <p class="text-[#030712] font-semibold text-lg">Passenger Name*</p>
                         <input type="text" placeholder="Enter your name" class="w-full input input-bordered " />
@@ -376,7 +376,7 @@
                             class="w-full input input-bordered " />
                         <p class="text-[#030712] font-semibold text-lg">Email ID</p>
                         <input type="email" placeholder="Enter your email id" class="w-full input input-bordered " />
-                        <button
+                        <button onclick="my_modal_5.showModal()"
                             class="btn font-raleway rounded-2xl text-white w-full font-bold text-[20px] bg-[#1DD100]">Next</button>
                         <div class="flex justify-center gap-10 font-inter">
                             <a class="underline text-[#03071299]" href="">Terms and Conditions</a>
@@ -390,6 +390,29 @@
             </div>
         </section>
     </main>
+    <!-- Modal Parts -->
+
+    <!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div class="flex justify-center flex-col items-center space-y-5">
+                <img src="images/success.png" alt="">
+                <p class="text-[#27AE60]  font-bold text-2xl">SUCCESS</p>
+                <p class="text-[#4A4A4A] text-xl font-medium">Thank you for Booking Our Bus Seats.</p>
+                <p class="#4A4A4A text-lg font-medium">We are working hard to find the best service for you.
+                </p>
+                <p class="text-[#4A4A4A] opacity-50">Shortly you will find a confirmation in your email.</p>
+
+            </div>
+            <div class="modal-action flex justify-center">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn font-semibold text-white bg-[#27AE60]">Continue</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
     <!-- footer -->
     <footer class="footer p-10 bg-[#030712] text-neutral-content">
