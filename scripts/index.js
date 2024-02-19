@@ -2,27 +2,17 @@ const allKbdButton = document.querySelectorAll('.kbd');
 const countPlus = document.getElementById('countPlus');
 const countMinus = document.getElementById('countMinus');
 const tableBody = document.getElementById('table-body');
-// --------------------------------------------------------
+
 const totalContainer = document.getElementById('totalContainer');
 const totalString = totalContainer.innerText;
 const totalPriceValue = parseFloat(totalString)
 let totalValue = totalPriceValue;
-
 
 const grandTotalContainer = document.getElementById('grandTotal');
 const grandTotalString = grandTotalContainer.innerText;
 const totalGrandPriceValue = parseFloat(grandTotalString);
 let grandTotal = totalGrandPriceValue;
 console.log(grandTotalString);
-
-
-
-
-
-
-
-
-// ---------------------------------------------------------
 
 let plus = 0;
 let sitMinus = 40;
@@ -42,6 +32,7 @@ for (const button of allKbdButton) {
             countMinus.innerText = sitMinus
             // --------------------------------
             const tr = document.createElement('tr');
+            tr.classList.add('bg-base-200');
             tr.innerHTML = `
         <td>${buttonText}</td>
         <td>${sitClass}</td>
@@ -73,11 +64,12 @@ discountApplyButton.addEventListener('click', function () {
     const grandTotalContainer = document.getElementById('grandTotal');
     const grandTotal = grandTotalContainer.innerText;
     const hiddenContainer = document.getElementById('hidden');
-
+    const discountContainer = document.getElementById('discountContainer');
 
     if (inputField === 'NEW15') {
         const discount15 = grandTotal * 15 / 100;
         const final15 = grandTotal - discount15;
+        discountContainer.innerText = discount15;
         grandTotalContainer.innerText = final15
 
 
@@ -85,6 +77,7 @@ discountApplyButton.addEventListener('click', function () {
     }
     else if (inputField === 'Couple 20') {
         const discount20 = grandTotal * 20 / 100;
+        discountContainer.innerText = discount20;
         const final20 = grandTotal - discount20;
         grandTotalContainer.innerText = final20
         hiddenContainer.classList.add('hidden')

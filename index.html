@@ -132,7 +132,8 @@
                         <div>
                             <div class="flex gap-3 rounded-lg bg-[#1dd10066] p-3">
                                 <img src="images/seat-green.png" alt="">
-                                <p class="text-xl font-semibold font-inter text-[#1DD100]"><span id="countMinus">40</span> Seats left
+                                <p class="text-xl font-semibold font-inter text-[#1DD100]"><span
+                                        id="countMinus">40</span> Seats left
                                 </p>
                             </div>
                         </div>
@@ -336,7 +337,7 @@
                         <table class="table my-5">
                             <!-- head -->
                             <thead>
-                                <tr>
+                                <tr class="bg-base-200">
                                     <th class="text-[#030712] font-medium text-lg">Seat <span id="countPlus"
                                             class="px-2 ml-2 text-white rounded-3xl bg-[#1DD100]"></span></th>
                                     <th class="text-[#030712] font-medium text-lg">Class</th>
@@ -347,18 +348,22 @@
 
                             </tbody>
                         </table>
-
-
                         <hr>
                         <!-- total price -->
                         <div class="flex justify-between my-4">
                             <h1 class="text-lg font-medium">Total Price</h1>
                             <h1 class="text-lg font-medium">BDT <span id="totalContainer">00</span></h1>
                         </div>
+                        <!-- dicount price -->
+                        <div class="flex justify-between my-4">
+                            <h1 class="text-lg font-medium">Discount Price</h1>
+                            <h1 class="text-lg font-medium">BDT <span id="discountContainer">00</span></h1>
+                        </div>
                         <!-- btn and input field -->
-                        <label  id="hidden" class="input input-bordered flex items-center gap-2">
+                        <label id="hidden" class="input input-bordered flex items-center gap-2">
                             <input id="inputField" type="text" class="grow" placeholder="Have any copupon?" />
-                            <button id="discountButton" class="bg-[#1DD100] p-2 rounded-xl text-white font-semibold">Apply</button>
+                            <button id="discountButton"
+                                class="bg-[#1DD100] p-2 rounded-xl text-white font-semibold">Apply</button>
                         </label>
 
                         <div class="flex justify-between my-4">
