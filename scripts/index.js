@@ -65,14 +65,14 @@ discountApplyButton.addEventListener('click', function () {
     const grandTotal = grandTotalContainer.innerText;
     const hiddenContainer = document.getElementById('hidden');
     const discountContainer = document.getElementById('discountContainer');
+    const discountHiddenContainer = document.getElementById('discount_hidden')
 
     if (inputField === 'NEW15') {
         const discount15 = grandTotal * 15 / 100;
         const final15 = grandTotal - discount15;
         discountContainer.innerText = discount15;
         grandTotalContainer.innerText = final15
-
-
+        discountHiddenContainer.classList.remove('hidden')
         hiddenContainer.classList.add('hidden')
     }
     else if (inputField === 'Couple 20') {
@@ -80,6 +80,7 @@ discountApplyButton.addEventListener('click', function () {
         discountContainer.innerText = discount20;
         const final20 = grandTotal - discount20;
         grandTotalContainer.innerText = final20
+        discountHiddenContainer.classList.remove('hidden')
         hiddenContainer.classList.add('hidden')
     }
     else {
