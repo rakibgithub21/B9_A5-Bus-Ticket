@@ -16,7 +16,7 @@ console.log(grandTotalString);
 
 let plus = 0;
 let sitMinus = 40;
-let sitClass = 'Economoy';
+let sitClassName = 'Economoy';
 let sitPrice = 550;
 
 
@@ -35,7 +35,7 @@ for (const button of allKbdButton) {
             tr.classList.add('bg-base-200');
             tr.innerHTML = `
         <td>${buttonText}</td>
-        <td>${sitClass}</td>
+        <td>${sitClassName}</td>
         <td>${sitPrice}</td>
         
         `;
