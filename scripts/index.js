@@ -37,7 +37,6 @@ for (const button of allKbdButton) {
         <td>${buttonText}</td>
         <td>${sitClassName}</td>
         <td>${sitPrice}</td>
-        
         `;
             tableBody.appendChild(tr);
             totalValue = totalValue + 550;
